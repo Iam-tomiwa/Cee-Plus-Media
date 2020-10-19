@@ -10,6 +10,13 @@ navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
 });
 
+let links = document.querySelectorAll('.navLink');
+//event listener for each links
+links.forEach(link => {  
+  link.addEventListener('click', () => {
+  navbar.classList.remove("showNav");
+  }); 
+});
 /**Update the year automatically*/
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
