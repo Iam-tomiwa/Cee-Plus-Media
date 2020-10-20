@@ -1,4 +1,3 @@
-
 :root {
   --primaryColor: #698f3f;
   --secondaryColor: #fca311;
@@ -9,24 +8,32 @@
   --mainTransition: all 0.3s linear;
   --letterSpacing: 0.5rem;
 }
-
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: white;
 }
 
+section {
+  margin: auto;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 a:active {
   color: white;
   text-decoration: none;
 }
 
-/*visited link*/ 
- a:visited {
+/*visited link*/
+a:visited {
   color: white;
 }
 
-/* mouse over link */  
- a:hover {
+/* mouse over link */
+a:hover {
   color: white;
 }
 
@@ -51,19 +58,16 @@ body {
   margin-top: -5px;
 }
 
-
-
-
 /* navbar button */
 .hamburger {
- position: fixed;
+  position: fixed;
   top: 0;
   right: 0;
   color: var(--primaryColor);
   z-index: 1;
   margin: 1rem 1.3rem;
   font-size: 2rem;
- animation: bounce 2s ease infinite;
+  animation: bounce 2s ease 2;
   cursor: pointer;
   padding: 10px 20px 10px 1px;
 }
@@ -105,11 +109,10 @@ body {
 .nav-items {
   list-style-type: none;
   display: block;
-  /*margin-left: auto;*/
   margin-right: 120px;
 }
 
-.hr-nav{
+.hr-nav {
   border-bottom: 1px solid #17c8ff;
   display: block;
   width: 100%;
@@ -118,8 +121,7 @@ body {
 .nav-link {
   display: block;
   font-size: 18px;
- /* text-transform: uppercase;*/
-  color:  #ffffff;
+  color: #ffffff;
   transition: var(--mainTransition);
 }
 .nav-link:hover {
@@ -140,10 +142,8 @@ body {
   height: 30px;
   width: 30px;
   margin: 5px;
-
 }
 /*nav styles end*/
-
 
 /*Logo styles*/
 #logo {
@@ -153,11 +153,8 @@ body {
 }
 
 #home {
- height: 100vh;
-position: relative;
-top: 0;
-left: 0;
-z-index: 100;
+  height: auto;
+  position: relative;
 }
 
 #particles-js {
@@ -167,114 +164,137 @@ z-index: 100;
   z-index: -1;
 }
 
-#intro {
-  color: #ffffff;
-  padding-top: 80px;
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 1rem;
 }
-  
+.intro-wrap {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
 h1 {
   font-size: 60px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: -20px;
 }
 
 #motto {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 #CeePlus {
-  font-family: 'DM Sans', sans-serif;
-  padding: 15px 10px; 
-  margin: 10px;
+  font-family: "DM Sans", sans-serif;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .heading {
   text-align: center;
 }
 
-#discuss {
-  background-color: #FF0066;
-  border-radius: 20px;
-  padding: 10px;
-  margin-left: 19px;
-  text-align: center;
-  border-style: none;
+.discuss {
+  background-color: #ff0066;
 }
 
-#learn {
+.learn {
   background-color: #1927ff;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  border-style: none;
 }
-
-
-.button {
-  margin-left: 10px;
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+}
+.link {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 1rem auto;
 }
 
 /*about us section*/
 
-#about{
+#about {
   color: whitesmoke;
+  margin: 1rem auto;
 }
 
+/*Portfolio style*/
+.container {
+  margin: auto;
+  width: 90%;
+}
 
-/*Portfolio style*/ 
 #Portfolio h2 {
   color: whitesmoke;
 }
 .box {
   height: 330px;
   position: relative;
-  
 }
 
 #one {
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 #two {
-  background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
 }
 
 #three {
-  background-color: #A9C9FF;
-  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
 }
 
 #four {
-  background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
 }
 
 #five {
-  background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  background-color: #faaca8;
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
 }
 
 #six {
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 
 #seven {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(200,162,200,1) 68%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(200, 162, 200, 1) 68%
+  );
 }
 
 #eight {
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 .label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: Black;
   text-decoration: none;
   position: absolute;
@@ -291,23 +311,19 @@ h1 {
 }
 /*Portfolio styles end*/
 
-
-
 /*Carousel/Slider*/
 @media screen and (min-width: 426px) {
   #small {
-  display: none;
+    display: none;
   }
 }
 
 @media screen and (max-width: 425px) {
   #slider {
     display: none;
-    }
+  }
 }
 /*Carousel/Slider ends*/
-
-
 
 /*What we do section*/
 #work h2 {
@@ -316,18 +332,18 @@ h1 {
 
 .services {
   background-color: #0f0f0f;
-  border-radius:25px; 
+  border-radius: 25px;
   height: 270px;
   color: whitesmoke;
 }
 
 #work img {
- /*padding: 20px 0px 10px 0px;*/
- display: block;
- margin-left: auto;
- margin-right: auto;
- height: 40px;
- width: 40px;
+  /*padding: 20px 0px 10px 0px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
 }
 
 .work-image {
@@ -342,8 +358,8 @@ h1 {
 }
 
 #work p {
-font-weight: 100;
-padding-top: 10px;
+  font-weight: 100;
+  padding-top: 10px;
 }
 
 #contacts {
@@ -359,7 +375,7 @@ padding-top: 10px;
   width: 30px;
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .imago {
@@ -367,8 +383,8 @@ padding-top: 10px;
   height: 70px;
   width: 70px;
   border-radius: 70%;
-  border: 1px solid #17C8FF;
-  
+  border: 1px solid #17c8ff;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -383,19 +399,15 @@ padding-top: 10px;
   font-weight: 400;
 }
 
-
-
- 
-
 /*footer styles*/
 footer {
   color: white;
   background-color: #0f0f0f;
   font-weight: 300;
-  margin:0px;
+  margin: 0px;
 }
 
-footer p{
+footer p {
   font-weight: 300 !important;
 }
 
@@ -404,11 +416,11 @@ footer p{
   width: 20px;
 }
 
-.first p{
-text-align: left;
+.first p {
+  text-align: left;
 }
 
-.logo-name{
+.logo-name {
   height: 30px;
   width: 100px;
 }
@@ -420,97 +432,76 @@ text-align: left;
 }
 
 @media only screen and (min-width: 990px) {
- .second, .third {
-   margin-top: 20px;
- }
+  .second,
+  .third {
+    margin-top: 20px;
+  }
 
- footer .container{
-   padding-left: 100px;
-   font-size: 17px;
- }
+  footer .container {
+    padding-left: 100px;
+    font-size: 17px;
+  }
 
- .second{
-   padding-left: 120px;
- }
+  .second {
+    padding-left: 120px;
+  }
 }
 /*footer styles end*/
 
 /*general query for tablet*/
-@media only screen and (min-width: 754px) {
- #CeePlus{
-   font-size: 18px;
+@media only screen and (min-width: 760px) {
+  #CeePlus {
+    text-align: center;
+    width: 70vw;
+    font-size: 18px;
   }
 
- #about p {
-   font-size: 17px;
- }
+  #buttons {
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-self: stretch;
+  }
 
- #work{
-   padding-left: 25px;
- }
+  #buttons a {
+    font-size: 20px;
+    padding: 20px;
+  }
 
-.in-touch1{
-  padding-left: 140px;
+  .link {
+    width: 45%;
+  }
+  .learn {
+    margin-left: 1.5rem;
+  }
+
+  #about p {
+    font-size: 17px;
+  }
+
+  #work {
+    padding-left: 25px;
+  }
+
+  .in-touch1 {
+    padding-left: 140px;
+  }
+
+  .in-touch2 {
+    padding-right: 140px;
+  }
 }
-
-.in-touch2{
-  padding-right: 140px;
-}
-}
-
 
 /*general query for tablet*/
 @media only screen and (min-width: 940px) {
-  #intro {
-    padding-top: 100px;
+  #buttons {
+    width: 70%;
   }
-  
-  #CeePlus{
-    display: block;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-size: 19px;
-   }
-
-   #buttons{
-     display: block;
-     margin-left: 200px;
-     margin-right: auto;
-   }
-
-   #buttons a {
-    font-size:20px;
-    padding: 20px;
-   }
-
-  #learn, #discuss {
-    border-radius: 25px;
-  }
-
-  .in-touch1{
+  .in-touch1 {
     padding-left: 240px;
   }
-  
-  .in-touch2{
+
+  .in-touch2 {
     padding-right: 240px;
   }
-  
- }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
